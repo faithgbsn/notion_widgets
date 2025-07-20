@@ -59,19 +59,18 @@
 
 	<nav class="navMenu  border">
 		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Inbox</a>
-		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner</a>
+		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Business</a>
+		<a id="personal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Personal</a>		
 		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Projects</a>
 		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tasks</a>
-		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Business</a>
 		<a id="knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> Knowledge</a>
+		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Inbox</a>
 		<a id="topics" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-layer-group"></i> Topics</a>
 		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Notes</a>
 		<a id="media" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Media</a>
-		<a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i> Resourses</a>
+		<a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i> Resources</a>
 		<a id="lifewiki" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Lifewiki</a>
-
-
+		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner</a>
 
 	</nav>
 
@@ -85,22 +84,19 @@
 
 
 		function navigate(id) {
-
 			if (id == 'home')
+				window.open("https://www.notion.so/83db2e56071a46f993620cc5d54ed1cb", '_blank').focus();			
+			else if (id == "personal")
+				window.open("https://www.notion.so/Personal-1a905f4e3635802dbefefed8b4e25e76?source=copy_link", '_blank').focus();
+			else if (id == "business")
+				window.open("https://www.notion.so/Business-Superb-Support-1a805f4e3635807fb6ddff3fa0473ea1?source=copy_link", '_blank').focus();
+			else if (id == "projects")
+				window.open("https://www.notion.so/21a05f4e363581ce852cd5c393447733?v=21a05f4e3635816aa65e000cd8cd9875&source=copy_link", '_blank').focus();
+			else if (id == "tasks")
+				window.open("https://www.notion.so/21a05f4e363581129b60e436a0daa292?v=21a05f4e363581139faf000c35b28f84&source=copy_link", '_blank').focus();
+			else if (id == "knowledge")
 				window.open("https://example.com", '_blank').focus();
 			else if (id == "inbox")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "week")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "month")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "projects")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "business")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "tasks")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "knowledge")
 				window.open("https://example.com", '_blank').focus();
 			else if (id == "topics")
 				window.open("https://example.com", '_blank').focus();
@@ -108,11 +104,14 @@
 				window.open("https://example.com", '_blank').focus();
 			else if (id == "media")
 				window.open("https://example.com", '_blank').focus();
-			else if (id == "resourses")
+			else if (id == "resources")
 				window.open("https://example.com3", '_blank').focus();
 			else if (id == "lifewiki")
 				window.open("https://example.com", '_blank').focus();
-
+			else if (id == "week")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "month")
+				window.open("https://example.com", '_blank').focus();
 		}
 	</script>
 
